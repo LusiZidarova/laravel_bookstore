@@ -1,0 +1,12 @@
+header{
+    background-color: lightblue;
+}
+form .form_signup{
+    font-family:verdana;
+    font-size: 13px;
+    width: 100%;
+    max-width:500px;
+    padding:10px;
+    border: solid thin #aaa;
+    margin:auto;
+}
