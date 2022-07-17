@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\SignupController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $array['name'] = 'Lusi';
+    return view('welcome',$array);
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/user',[UserController::class,'index']);
+Route::get('/signup',[SignupController::class,'index']);
+/*Route::get('/user', function () {
+    return view('user');
+});*/
